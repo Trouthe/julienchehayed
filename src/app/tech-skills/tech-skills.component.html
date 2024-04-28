@@ -1,0 +1,32 @@
+
+@for (x of technicalSkillsValues; track $index) {
+    
+    <div class="md:scale-[.85] scale-75">
+        <div class="relative">
+            <round-progress
+                [current]="x.value"
+                [max]="100"
+                [color]="x.color"
+                [background]="'#eaeaea'"
+                [radius]="125"
+                [stroke]="20"
+                [rounded]="false"
+                [clockwise]="true"
+                [responsive]="false"
+                [duration]="1000"
+                [animation]="'easeInOutQuart'"
+                [animationDelay]="0">
+            </round-progress>
+    
+            <img [src]="x.img" alt="Icon representing the technical skill"
+                class="absolute select-none
+                    translate-x-[-50%] left-[50%]
+                    translate-y-[-50%] top-[50%]"
+                width="212px"
+                loading="lazy">
+    
+        </div>
+        <p class="text-black text-center mt-5 text-2xl font-bold">{{ x.name }}</p>
+    </div>
+
+}

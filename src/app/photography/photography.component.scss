@@ -1,0 +1,16 @@
+.card {
+    .card_text { 
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 250ms;
+        height: 4rem;
+        background-color: #ffffffbb;
+    }
+    &:hover { 
+        .card_text { 
+            height: 100%;
+            cursor: default;
+        }
+    }
+}

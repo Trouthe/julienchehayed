@@ -1,2 +1,74 @@
-<app-navigation></app-navigation>
-<router-outlet></router-outlet>
+<app-carousel></app-carousel> 
+
+<!-- Body -->
+<section>
+    <!-- Introduction -->
+    <div class="flex flex-col justify-center items-center m-10 pt-10 gap-10">
+        <h1 class="text-neutral-700 md:text-6xl lg:text-7xl text-5xl text-center font-semibold">Hello, I'm Julien</h1>
+        <h3 class="text-neutral-700 opacity-50 md:text-2xl text-lg text-justify">Dedicated and creative professional with a diverse skill set in graphic design, <br>
+            photography and editing. Seeking opportunities to contribute expertise <br>
+            and passion to a dynamic team</h3>
+    </div>
+
+    <!-- Techincal Skills -->
+    <div id="technical-skills" class="md:px-52 py-24">
+        <h2 class="uppercase text-black text-5xl text-center mb-10 font-bold px-10">Technical Skills</h2>
+        <app-tech-skills class="max-w-[2100px]
+        lg:flex lg:flex-row lg:justify-between lg:gap-20
+        grid grid-flow-col grid-rows-2 scale-[.80] justify-center mx-auto"></app-tech-skills>
+    </div>
+
+    <!-- Photography -->
+    <div class="w-full bg-slate-700 py-20 px-10">
+        <h2 class="uppercase text-white md:text-5xl text-4xl text-center mb-16 font-bold">Photography</h2>
+        <app-photography class="max-w-[2100px] mx-auto
+        lg:flex lg:flex-row lg:gap-20 justify-center
+        flex flex-col gap-10
+        "></app-photography>
+    </div>
+
+    <!-- Experience -->
+    <div class="w-full">
+        <h1 class="my-16 uppercase text-5xl text-black text-center font-bold">Experience</h1>
+        <app-experience class="max-w-[2100px] grid grid-rows-1 grid-flow-row 
+        md:grid-rows-2 md:grid-cols-2 mx-auto w-[75%] gap-10 mb-16
+        "></app-experience>
+    </div>
+
+    <!-- Professional Skills -->
+    <div class="prof-skills w-full pb-16 pt-1 md:px-32 px-10">
+        <h1 class="my-16 uppercase md:text-5xl text-4xl text-white text-center font-bold">Professional Skills</h1>
+        <app-professional-skills class="max-w-[2100px]"></app-professional-skills>
+    </div>
+
+    <!-- Education + Portfolio -->
+    <div class="flex flex-col max-w-[2100px] mx-auto">
+        <!-- Education -->
+        <div class="flex lg:flex-row flex-col lg:justify-between lg:gap-0 gap-20 text-black my-20 md:mx-32 mx-auto">
+            <h1 class="text-5xl font-bold uppercase">Education</h1>
+
+            <div class="flex flex-col">
+                <h2 class="uppercase text-3xl font-bold">Institute Al Kafaat</h2>
+                <h2 class="text-[#999] text-2xl">BT3 Interior Design</h2>
+                <h4 class="text-xl">Fanar | 2012 - 2015</h4>
+            </div>
+
+            <div class="flex flex-col">
+                <h2 class="uppercase text-3xl font-bold">ITI Dekwane</h2>
+                <h2 class="text-[#999] text-2xl">TS2 Graphioc Design</h2>
+                <h4 class="text-xl">Dekwane | 2016 - 2018</h4>
+            </div>
+        </div>
+
+        <!-- Portflio -->
+        <app-portfolio class="mt-20"></app-portfolio>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#021F29] mt-10">
+    <div class="py-10 text-white flex flex-col justify-center items-center">
+        <a href="tel:+96176303887">+(961)76-303-887</a>
+        <a href="mailto:jchehayed.1995@gmail.com">jchehayed.1995&#64;gmail.com</a>
+    </div>
+</footer>

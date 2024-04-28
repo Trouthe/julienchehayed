@@ -1,0 +1,13 @@
+@for (x of photography_content; track $index) {
+    <div class="md:w-[400px]">
+        <!-- TItle && Image -->
+        <div class="relative card flex transition-all duration-200 md:hover:scale-105">
+            <h3 class="card_text absolute text-sm md:text-[.975rem] font-bold hover:self-center px-10 md:hover:text-xl  py-1 text-black text-center
+             w-full">{{ x.title }}</h3>
+            <img fetchpriority="slow" loading="lazy" [src]="x.img" alt="">
+        </div>
+
+        <!-- Description -->
+        <p class="mt-5">{{ x.description }}</p>
+    </div>
+}

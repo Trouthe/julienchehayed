@@ -1,0 +1,40 @@
+@if (mobile) {
+    <swiper-container
+    slides-per-view="1"
+    
+    navigation="true">
+
+    @for (x of videos; track $index) {
+        <swiper-slide class="mb-10">
+            <app-vjsplayer fetchpriority="slow" class="w-full mx-auto" [options]="{ src: x.url, poster: x.image }"></app-vjsplayer>
+        </swiper-slide>
+    }
+    
+    </swiper-container>
+} @else if (tablet) {
+    <swiper-container
+    slides-per-view="2"
+    
+    navigation="true">
+
+    @for (x of videos; track $index) {
+        <swiper-slide class="mb-10">
+            <app-vjsplayer fetchpriority="slow" class="w-full mx-auto" [options]="{ src: x.url, poster: x.image }"></app-vjsplayer>
+        </swiper-slide>
+    }
+    
+    </swiper-container>
+} @else if (!tablet && !mobile) {
+    <swiper-container
+    slides-per-view="3"
+    
+    navigation="true">
+
+    @for (x of videos; track $index) {
+        <swiper-slide class="mb-10">
+            <app-vjsplayer fetchpriority="slow" class="w-full mx-auto" [options]="{ src: x.url, poster: x.image }"></app-vjsplayer>
+        </swiper-slide>
+    }
+    
+    </swiper-container>
+}

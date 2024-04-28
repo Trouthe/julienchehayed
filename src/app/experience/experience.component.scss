@@ -1,0 +1,12 @@
+.date-span {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -0.06rem;
+        width: 1.3rem;
+        height: 2px;
+        background-color: black;
+        border-radius: 12.5%;
+    }
+}

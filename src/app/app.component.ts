@@ -1,15 +1,32 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { NavigationComponent } from './navigation/navigation.component';
+
+// Components
+import { CarouselComponent } from './carousel/carousel.component';
+import { TechSkillsComponent } from './tech-skills/tech-skills.component';
+import { PhotographyComponent } from './photography/photography.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ProfessionalSkillsComponent } from './professional-skills/professional-skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { VJSPlayerComponent } from './vjsplayer/vjsplayer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavigationComponent],
+  imports: [
+    RouterOutlet,
+    CarouselComponent,
+    TechSkillsComponent,
+    PhotographyComponent,
+    ExperienceComponent,
+    ProfessionalSkillsComponent,
+    PortfolioComponent,
+    VJSPlayerComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrl: './app.component.scss'
 })
+
 export class AppComponent {
-  title = 'ng17-on-netlify';
+  title = 'Julien CV';
 }

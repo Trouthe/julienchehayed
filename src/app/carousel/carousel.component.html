@@ -1,0 +1,45 @@
+<h1 class="md:text-9xl text-5xl font-bold text-center pointer-events-none drop-shadow-2xl
+    absolute w-full h-full justify-center items-center flex flex-col z-10">
+
+    {{ headerCarousel[0].name }}
+
+</h1>
+
+<swiper-container 
+    loop="true" 
+    speed="350" 
+    effect="fade" 
+    autoplay="true" 
+    autoplay-delay="2500">
+
+    <swiper-slide class="flex items-center justify-center">
+        <!-- Text -->
+        <div class="absolute text-center">
+            <h1 class="md:text-5xl text-3xl pointer-events-none mt-52 drop-shadow-2xl">
+                {{ headerCarousel[0].profession }}
+            </h1>
+        </div>
+
+        <!-- Image -->
+        <div class="w-screen h-screen bg-cover bg-center"
+            style="background-image: url('{{headerCarousel[0].img}}');
+            background-position: 22.5% 0;">
+        </div>
+    </swiper-slide>
+
+    <swiper-slide class="flex items-center justify-center">
+        <!-- Text -->
+        <div class="absolute text-center">
+            <h1 class="md:text-5xl text-3xl pointer-events-none mt-52 drop-shadow-2xl">
+                {{ headerCarousel[1].profession }}
+            </h1>
+        </div>
+
+        <!-- Image -->
+        <div fetchpriority="high" class="w-screen h-screen bg-cover bg-center"
+            style="background-image: url('{{headerCarousel[1].img}}');
+            background-position: 18.5% 0;">
+        </div>
+    </swiper-slide>
+
+</swiper-container>
