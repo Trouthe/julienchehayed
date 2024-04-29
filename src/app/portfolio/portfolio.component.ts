@@ -18,6 +18,10 @@ interface VideoShowcase {
 export class PortfolioComponent {
   videos: VideoShowcase[] = [
     {
+      url: 'https://www.dropbox.com/scl/fi/mt4z1lyqo4yapn7stwoz1/Sabounji_1.mp4?rlkey=yfy08wbarsht4l2m5iozhduy2&st=fa5f36ot&raw=1',
+      image: '../assets/PortfolioPreviews/Sabounji-1.webp'
+    },
+    {
       url: 'https://www.dropbox.com/scl/fi/2h19nyw17vewctsju1i3t/Ayadina_1.mp4?rlkey=prd3kx9meffecgfc46mk438ry&raw=1',
       image: '../assets/PortfolioPreviews/ayadina-1.webp'
     },
@@ -108,7 +112,7 @@ export class PortfolioComponent {
     {
       url: 'https://www.dropbox.com/scl/fi/13nv8qtopn8akao3zrzog/Ziebart_1.mp4?rlkey=dppbriurs14opxgq89nrfksy1&raw=1',
       image: '../assets/PortfolioPreviews/ziebart-1.webp'
-    },
+    }
   ];
 
   mobile: boolean = false;
