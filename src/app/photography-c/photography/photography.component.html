@@ -8,6 +8,12 @@
         </div>
 
         <!-- Description -->
-        <p class="mt-5">{{ x.description }}</p>
+        <p class="mt-5">{{ x.showFullDescription ? x.description : x.truncatedDescription }}
+            @if (x.description.length > 200 && !x.showFullDescription) {
+                <a (click)="toggleDescription($index)"  class="text-blue-400"><br>Read More</a>
+            } @else {
+                <a (click)="toggleDescription($index)"  class="text-blue-400"><br>Read Less</a>
+            }
+        </p>
     </div>
 }

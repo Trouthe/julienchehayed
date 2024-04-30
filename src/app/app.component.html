@@ -19,13 +19,23 @@
     </div>
 
     <!-- Photography -->
-    <div class="w-full bg-slate-700 py-20 px-10">
-        <h2 class="uppercase text-white md:text-5xl text-4xl text-center mb-16 font-bold">Photography</h2>
-        <app-photography class="max-w-[2100px] mx-auto
-        lg:flex lg:flex-row lg:gap-20 justify-center
-        flex flex-col gap-10
-        "></app-photography>
-    </div>
+    @if (mobile || tablet) {
+        <div class="w-full bg-slate-700 pt-10 flex flex-col m-auto p-auto">
+            <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+                <div class="flex flex-nowrap mx-[4.25rem]">
+                    <app-photography-m class="flex flex-row gap-32"></app-photography-m>
+                </div>
+            </div>
+        </div>
+    } @else if (!tablet && !mobile) {
+        <div class="w-full bg-slate-700 py-20 px-10">
+            <h2 class="uppercase text-white md:text-5xl text-4xl text-center mb-16 font-bold">Photography</h2>
+            <app-photography class="max-w-[2100px] mx-auto
+            lg:flex lg:flex-row lg:gap-20 justify-center
+            flex flex-col gap-10
+            "></app-photography>
+        </div>
+    }
 
     <!-- Experience -->
     <div class="w-full">

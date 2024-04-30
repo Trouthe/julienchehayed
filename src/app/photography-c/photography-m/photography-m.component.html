@@ -1,0 +1,19 @@
+@for (x of photography_content; track $index) {
+    <div class="md:w-[300px]">
+        <!-- TItle && Image -->
+        <div class="w-[300px] relative card flex">
+            <h3 class="card_text absolute text-sm font-bold px-10  py-1 text-black text-center
+             w-full">{{ x.title }}</h3>
+            <img fetchpriority="slow" loading="lazy" [src]="x.img" class="h-[200px] w-[400px]" alt="">
+        </div>
+
+        <!-- Description -->
+        <p class="mt-5">{{ x.showFullDescription ? x.description : x.truncatedDescription }}
+            @if (x.description.length > 200 && !x.showFullDescription) {
+                <a (click)="toggleDescription($index)"  class="text-blue-400">Read More</a>
+            } @else {
+                <a (click)="toggleDescription($index)"  class="text-blue-400"><br>Read Less</a>
+            }
+        </p>
+    </div>
+}
