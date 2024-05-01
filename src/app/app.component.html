@@ -20,12 +20,8 @@
 
     <!-- Photography -->
     @if (mobile || tablet) {
-        <div class="w-full bg-slate-700 pt-10 flex flex-col m-auto p-auto">
-            <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
-                <div class="flex flex-nowrap mx-[calc(45vw-8rem)]">
-                    <app-photography-m class="flex flex-row gap-32"></app-photography-m>
-                </div>
-            </div>
+        <div class="w-full bg-slate-700 pt-10 relative pb-5 flex flex-col m-auto p-auto">
+            <app-photography-m class="flex flex-row gap-32"></app-photography-m>
         </div>
     } @else if (!tablet && !mobile) {
         <div class="w-full bg-slate-700 py-20 px-10">
@@ -50,11 +46,11 @@
         <h1 class=" uppercase md:text-5xl text-4xl text-white text-center font-bold md:px-0 px-10">Professional Skills</h1>
         @if (mobile || tablet) {
             <div class="flex overflow-x-scroll hide-scroll-bar">
-                <div class="flex flex-nowrap mx-[calc(45vw-8rem)]">
+                <div class="flex flex-nowrap mx-[2.5rem]">
                     <app-professional-skills class="md:max-w-[2100px] flex flex-row gap-32"></app-professional-skills>
                 </div>
             </div>
-        } @else {
+        } @else if (!tablet && !mobile) {
             <app-professional-skills class="max-w-[2100px]"></app-professional-skills>
         }
     </div>
