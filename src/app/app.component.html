@@ -22,7 +22,7 @@
     @if (mobile || tablet) {
         <div class="w-full bg-slate-700 pt-10 flex flex-col m-auto p-auto">
             <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
-                <div class="flex flex-nowrap mx-[4.25rem]">
+                <div class="flex flex-nowrap mx-[calc(46vw-8rem)]">
                     <app-photography-m class="flex flex-row gap-32"></app-photography-m>
                 </div>
             </div>
@@ -46,9 +46,17 @@
     </div>
 
     <!-- Professional Skills -->
-    <div class="prof-skills w-full pb-16 pt-1 md:px-32 px-10">
-        <h1 class="my-16 uppercase md:text-5xl text-4xl text-white text-center font-bold">Professional Skills</h1>
-        <app-professional-skills class="max-w-[2100px]"></app-professional-skills>
+    <div class="prof-skills w-full py-10 md:px-32">
+        <h1 class=" uppercase md:text-5xl text-4xl text-white text-center font-bold md:px-0 px-10">Professional Skills</h1>
+        @if (mobile || tablet) {
+            <div class="flex overflow-x-scroll hide-scroll-bar">
+                <div class="flex flex-nowrap mx-[calc(46vw-8rem)]">
+                    <app-professional-skills class="md:max-w-[2100px] flex flex-row gap-32"></app-professional-skills>
+                </div>
+            </div>
+        } @else {
+            <app-professional-skills class="max-w-[2100px]"></app-professional-skills>
+        }
     </div>
 
     <!-- Education + Portfolio -->

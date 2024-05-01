@@ -1,6 +1,6 @@
 <!-- Skills -->
-<div class="lg:flex lg:flex-row lg:mx-32 gap-10 lg:justify-center items-center
-    grid grid-flow-col grid-rows-5 justify-center">
+<div class="flex flex-row mt-5 gap-10 lg:justify-center items-center
+     justify-center">
     @for (x of [
         {image: '../assets/Icons/communication.webp', title: 'communication'},
         {image: '../assets/Icons/creativity.webp', title: 'creativity'},
@@ -9,14 +9,13 @@
         {image: '../assets/Icons/learning.webp', title: 'learning \n development'},
     ];
     track $index) {
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col md:w-[175px] w-[125px] md:h-[240px] justify-stretch items-center">
             <img 
                 fetchpriority="slow"
-                [src]="x.image" 
-                class="md:w-[225px] w-[200px]" 
+                [src]="x.image"
                 loading="lazy"
                 alt="An image representing the professional skill">
-            <h3 class="uppercase mt-10 md:text-xl text-center">{{ x.title }}</h3>
+            <h3 class="uppercase my-auto md:text-xl text-center">{{ x.title }}</h3>
         </div>
     }
 </div>
