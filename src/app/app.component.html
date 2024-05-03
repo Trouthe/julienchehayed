@@ -42,12 +42,12 @@
     </div>
 
     <!-- Professional Skills -->
-    <div class="prof-skills w-full py-10 md:px-32">
+    <div class="prof-skills w-full pt-10 md:pb-10 pb-7 md:px-32">
         <h1 class=" uppercase md:text-5xl text-4xl text-white text-center font-bold md:px-0 px-10">Professional Skills</h1>
         @if (mobile || tablet) {
             <div class="flex overflow-x-scroll hide-scroll-bar">
-                <div class="flex flex-nowrap mx-[2.5rem]">
-                    <app-professional-skills class="md:max-w-[2100px] flex flex-row gap-32"></app-professional-skills>
+                <div class="flex flex-nowrap">
+                    <app-professional-skills-m></app-professional-skills-m>
                 </div>
             </div>
         } @else if (!tablet && !mobile) {

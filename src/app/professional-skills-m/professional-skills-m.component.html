@@ -1,0 +1,11 @@
+<!-- Skills -->
+<swiper-container #swiperRef init="false" class="w-screen">
+    @for (x of profskills; track x; let iteration = $odd) {
+    <swiper-slide class="px-10 pb-5">
+        <div class="flex flex-col w-[135px] h-[200px] mx-auto justify-center items-center">
+            <img (click)="c_log(x.image)" fetchpriority="slow" [src]="x.image" loading="lazy" alt="An image representing the professional skill">
+            <h3 class="uppercase my-auto md:text-xl text-center">{{ x.title }}</h3>
+        </div>
+    </swiper-slide>
+    }
+</swiper-container>

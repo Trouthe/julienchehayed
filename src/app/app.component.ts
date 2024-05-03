@@ -7,6 +7,7 @@ import { TechSkillsComponent } from './tech-skills/tech-skills.component';
 import { PhotographyComponent } from './photography-c/photography/photography.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProfessionalSkillsComponent } from './professional-skills/professional-skills.component';
+import { ProfessionalSkillsMComponent } from './professional-skills-m/professional-skills-m.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { VJSPlayerComponent } from './vjsplayer/vjsplayer.component';
 import { PhotographyMComponent } from './photography-c/photography-m/photography-m.component';
@@ -22,6 +23,7 @@ import { PhotographyMComponent } from './photography-c/photography-m/photography
     PhotographyMComponent,
     ExperienceComponent,
     ProfessionalSkillsComponent,
+    ProfessionalSkillsMComponent,
     PortfolioComponent,
     VJSPlayerComponent,
   ],
