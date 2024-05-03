@@ -18,6 +18,18 @@ interface VideoShowcase {
 export class PortfolioComponent {
   videos: VideoShowcase[] = [
     {
+      url: 'https://www.dropbox.com/scl/fi/wu5x3ql0gbzl2h8crx79q/Suzane.mp4?rlkey=qoh19tcxtgnv94p18nnu2jz7j&st=fdyzlj60&raw=1',
+      image: '../assets/PortfolioPreviews/suzane.webp'
+    },
+    {
+      url: 'https://www.dropbox.com/scl/fi/1drw2xq53a7j2e0lhui44/NFC.mp4?rlkey=6mz1i8siqprr6sntmity30bum&st=ivt7lnzb&raw=1',
+      image: '../assets/PortfolioPreviews/nfc.webp'
+    },
+    {
+      url: 'https://www.dropbox.com/scl/fi/axfqo73jjabnfpxdhmh44/SWL.mp4?rlkey=wmxnonr7e1isj3tnk8wq5l4vr&st=5xz8w5ih&raw=1',
+      image: '../assets/PortfolioPreviews/swl.webp'
+    },
+    {
       url: 'https://www.dropbox.com/scl/fi/mt4z1lyqo4yapn7stwoz1/Sabounji_1.mp4?rlkey=yfy08wbarsht4l2m5iozhduy2&st=fa5f36ot&raw=1',
       image: '../assets/PortfolioPreviews/Sabounji-1.webp'
     },
